@@ -1,0 +1,16 @@
+# Fran (Main)
+root:cccccckfhdcj
+centos:cccccckfhdcj
+debian:cccccckfhdcj
+# Fran (Rescue)
+root:vvvijtnbebkv
+centos:vvvijtnbebkv
+debian:vvvijtnbebkv
+# Alex (Main)
+root:cccccctciljh
+centos:cccccctciljh
+debian:cccccctciljh
+# Alex (Rescue)
+root:vvnfhbfnniuc
+centos:vvnfhbfnniuc
+debian:vvnfhbfnniuc
