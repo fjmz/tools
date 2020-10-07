@@ -12,7 +12,7 @@ if [ -f /etc/redhat-release ]; then
   sudo dnf update -y
   # Dependencies
   sudo dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-  sudo dnf install -y pam_yubico htop pwgen git nano
+  sudo dnf install -y pam_yubico htop pwgen git nano nmap nc traceroute
   echo '' >> ~/.bashrc
   echo '#Custom Alias' >> ~/.bashrc
   echo 'alias top="htop"' >> ~/.bashrc
