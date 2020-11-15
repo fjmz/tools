@@ -23,6 +23,7 @@ if [ -f /etc/redhat-release ]; then
   sudo curl -o /etc/yubikey_mappings https://raw.githubusercontent.com/fjmz/tools/master/conf/yubikey_mappings
   sudo mv /etc/ssh/sshd_config /etc/sshd_config.old && sudo curl -o /etc/ssh/sshd_config https://raw.githubusercontent.com/fjmz/tools/master/conf/sshd_config
   sudo mv /etc/pam.d/sshd /etc/pam.d/sshd.old && sudo curl -o /etc/pam.d/sshd https://raw.githubusercontent.com/fjmz/tools/master/conf/pam_sshd
+  sudo setsebool -P authlogin_yubikey on
   sudo systemctl restart sshd
   # Docker CE (latest)
   sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
