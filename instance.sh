@@ -29,4 +29,7 @@ if [ -f /etc/redhat-release ]; then
   sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
   sudo dnf install -y docker-ce
   sudo systemctl enable docker && sudo systemctl start docker
+  # Docker Compose
+  sudo dnf install -y python3-pip
+  sudo pip3 install docker-compose
 fi
