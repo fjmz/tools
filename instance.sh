@@ -32,6 +32,9 @@ if [ -f /etc/redhat-release ]; then
   # Docker Compose
   sudo dnf install -y python3-pip
   sudo pip3 install docker-compose
+    # Docker & Compose non-root
+  sudo usermod -aG docker centos
+  sudo su centos
 fi
 
 ###
@@ -68,4 +71,7 @@ if [ -f /etc/debian_version ]; then
   sudo systemctl enable docker && sudo systemctl start docker
   # Docker Compose
   sudo apt install -y docker-compose
+    # Docker & Compose non-root
+  sudo usermod -aG docker debian
+  sudo su debian
 fi
