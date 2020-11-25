@@ -12,7 +12,7 @@ if [ -f /etc/redhat-release ]; then
   sudo dnf update -y
   # Dependencies
   sudo dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-  sudo dnf install -y pam_yubico htop pwgen git nano nmap nc traceroute
+  sudo dnf install -y pam_yubico htop pwgen git nano nmap nc traceroute mlocate
   echo '' >> ~/.bashrc
   echo '#Custom Alias' >> ~/.bashrc
   echo 'alias top="htop"' >> ~/.bashrc
@@ -52,7 +52,7 @@ if [ -f /etc/debian_version ]; then
   # Update & Upgrade
   sudo apt update && sudo apt upgrade -y
   # Dependencies
-  sudo apt install -y libpam-yubico htop pwgen git nano nmap netcat traceroute apt-transport-https ca-certificates curl gnupg-agent software-properties-common net-tools 
+  sudo apt install -y libpam-yubico htop pwgen git nano nmap netcat traceroute mlocate apt-transport-https ca-certificates curl gnupg-agent software-properties-common net-tools 
   echo '' >> ~/.bashrc
   echo '#Custom Alias' >> ~/.bashrc
   echo 'alias top="htop"' >> ~/.bashrc
